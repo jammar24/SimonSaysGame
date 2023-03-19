@@ -1,0 +1,71 @@
+.simon__principal {
+    background-image: url("https://i.pinimg.com/564x/8c/a3/f4/8ca3f4154dcc30c62c2df99ed811f601.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+.simon {
+  position: relative;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.simon__img {
+  width: 15vh;
+}
+.simon__container {
+  display: inline-grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto;
+  transform: rotate(135deg);
+}
+.square {
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+.square:active,
+.active {
+  filter:brightness(185%);
+}
+.red {
+  background-color: rgb(145, 0, 0);
+  
+}
+.blue {
+  background-color: rgb(1, 1, 150);
+}
+.yellow {
+  background-color: rgb(164, 150, 0);
+}
+.green {
+  background-color: rgb(3, 155, 3);
+}
+#simon__btn {
+  width: 75px;
+  position: absolute;
+  top: 24px;
+  left: 20em;
+  border: none;
+  cursor: pointer;
+  border-radius: 1em;
+  color: #fff;
+  background-color: rgb(216, 191, 239);
+  padding: 5px;
+}
+#simon__btn:hover {
+  background-color: rgb(185, 131, 147);
+}
+.winner {
+  animation: spin 1s ease-in-out;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(180deg);
+  }
+}
